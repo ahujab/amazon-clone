@@ -14,7 +14,7 @@ function App() {
   useEffect(()=>{
     //only runs once when app component loads...
     auth.onAuthStateChanged(authUser=>{
-      console.log('THE USER IS >>>>', authUser);
+      console.log('hi:  THE USER IS >>>>', authUser);
       if (authUser){
         //shoot user to data layer
         dispatch({
