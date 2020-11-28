@@ -10,8 +10,10 @@ const firebaseConfig = {
   storageBucket: "fir-b9fc0.appspot.com",
   messagingSenderId: "1092075293806",
   appId: "1:1092075293806:web:a283191b5987f0e8cbea7f",
-  measurementId: "G-VD3LXSJBWC"
+  measurementId: "G-VD3LXSJBWC",
+  
 };
+
 const firebaseApp=firebase.initializeApp(firebaseConfig);
 const db=firebaseApp.firestore();
 const auth=firebase.auth();

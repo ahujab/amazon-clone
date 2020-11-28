@@ -1,22 +1,62 @@
 import React from 'react'
 import './Home.css'
+import Carousel from 'react-elastic-carousel';
+import { MDBMask, MDBView, MDBContainer, MDBRow, MDBCol } from "mdbreact";
+
+import ReactHover from 'react-hover'
+
+import Item from "./Item";
+import img1 from  "./img1.jpg";
+import img2 from  "./img2.jpg";
+import img3 from  "./img3.jpg";
+import img4 from  "./img4.jpg";
+import img5 from  "./img5.jpg";
+
 import Product from './Product.js'
+
 function Home() {
+
+
     return (
         <div className="home">
             <div className="home__container">
-                <img className="home__image"
+            <Carousel >
+        <Item >
+          
+            <img className="home__image"
                 src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
                 alt=""></img>
-            
+                </Item>
+        <Item><img className="home__image"
+                src={img1}
+                alt=""></img></Item>
+        <Item><img className="home__image"
+                src={img2}
+                alt=""></img></Item>
+        <Item><img className="home__image"
+                src={img3}
+                alt=""></img></Item>
+        <Item><img className="home__image"
+                src={img4}
+                alt=""></img></Item>
+         <Item><img className="home__image"
+                src={img5}
+                alt=""></img></Item>
+        
+      </Carousel>
+                
             <div className="home__row">
-          <Product
+            
+                
+                <Product
             id="12321341"
             title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
             price={11.96}
             rating={5}
             image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
           />
+             
+          
           <Product
             id="49538094"
             title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl"
